@@ -29,7 +29,8 @@ int main(){
         //  1 1/2 2/1 3/2 1/1 2/2 3
         //   1   2   3   4   5   6
         bool isvalid=false;
-        for(int i=x; i<=lcm(M, N); i+=M){
+        int l =lcm(M,N);
+        for(int i=x; i<=l; i+=M){
             if(i % N == y || (y == N && i%N==0)){
                 isvalid=true;
                 cout << i << "\n";
