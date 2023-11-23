@@ -23,10 +23,8 @@ void bfs_search(){
     }
 }
 
-stack<int> dfs;
 void dfs_search(int val){
     vis[val] = true;
-    dfs.push(val);
     cout << val << " ";
     for(auto node: graph[val]){
         if(!vis[node]){
